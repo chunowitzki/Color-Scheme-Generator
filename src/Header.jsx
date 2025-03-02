@@ -14,7 +14,7 @@ export default function Header(props) {
           console.log(colorData)
       }
     return (
-        <div>
+        <header>
              <input type='color' value={color} onChange={handleColorChange}/>
             <select value={selectedScheme} onChange={e => setSelectedScheme(e.target.value)} >
                 <option value="monochrome">monochrome</option>
@@ -27,6 +27,6 @@ export default function Header(props) {
                 <option value="quad">quad</option>
             </select>
             <button onClick={handleSubmit}>Get Color Scheme</button>
-        </div>
+        </header>
     )
 }

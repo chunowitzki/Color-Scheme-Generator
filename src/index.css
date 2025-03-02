@@ -1,15 +1,62 @@
 
 body {
-  margin: 0;
   width: 550px;
   height: 550px;
   margin: 0 auto;
+  background-color: #1F2937;
+  color: whitesmoke;
 }
 
 .scheme-hex-values {
   display: flex;
+  justify-content: center;
+  gap: 51px;
+  margin-top: 0;
+  width: 550px;
+
+
 }
 
 .scheme-image {
   transform: rotate(90deg); 
+  width: 450px;
+  height: 550px;
+  
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  height: 90px;
+  margin-bottom: -20px;
+
+}
+
+select, button {
+  height: 42px;
+  border-radius: 4px;
+
+}
+
+select {
+  width: 250px;
+}
+
+div > p {
+  margin-top: -20px;
+}
+
+img {
+  margin-bottom: -10px;
+  margin-top: -10px;
 }

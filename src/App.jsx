@@ -20,11 +20,13 @@ function App() {
   return (
     <>
      <Header color={color} handleColorChange={handleColorChange} selectedScheme={selectedScheme} setSelectedScheme={setSelectedScheme} colorData={colorData} setColorData={setColorData}/>
-     {colorData && <img className="scheme-image"src={colorData.image.bare} />}
+     <div className='img-container'>
+      {colorData && <img className="scheme-image"src={colorData.image.bare} />}
+     </div>
      <div className='scheme-hex-values'>
       {colorData && colorData.colors.map(color => {
         return (
-        <p>{color.hex.value}</p>
+        <p>{color.hex.value}{ }</p>
         )
       })}
       </div>
