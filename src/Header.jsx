@@ -3,7 +3,7 @@ export default function Header(props) {
     const { color, handleColorChange, selectedScheme, setSelectedScheme, colorData, setColorData} = props
 
     function handleSubmit() {
-        fetch(`https://www.thecolorapi.com/scheme?hex=${color}&mode=${selectedScheme}`)
+        fetch(`https://www.thecolorapi.com/scheme?hex=${color.slice(1,7)}&mode=${selectedScheme}`)
             .then(res => {
               if(!res.ok) {
                 throw new Error(console.log(error))

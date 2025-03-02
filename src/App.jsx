@@ -8,8 +8,8 @@ function App() {
   const [colorData, setColorData] = useState()
 
   const handleColorChange = e => {
-    setColor(e.target.value.slice(1,7))
-    
+    // setColor(e.target.value.slice(1,7))
+    setColor(e.target.value)
   }
 
 
